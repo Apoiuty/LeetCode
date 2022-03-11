@@ -11,3 +11,24 @@ class Solution:
         """
         Do not return anything, modify root in-place instead.
         """
+        if not root or not root.right and not root.left:
+            return
+
+        cur = root
+
+        while cur:
+            if cur.left:
+                if not cur.right:
+                    cur.right = cur.left
+                    cur.left = None
+                    cur = cur.right
+                else:
+                    pre = cur.left
+                    while pre.right:
+                        pre = pre.right
+                    pre.right = cur.right
+                    cur.right = None
+            else:
+                cur = cur.right
+
+
