@@ -1,10 +1,14 @@
 class Solution:
     def lastRemaining(self, n: int, m: int) -> int:
-        l = list(range(n))
-        while len(l) > 1:
-            del l[m % len(l) - 1]
-        return l[0]
+        if n == 1:
+            return 0
+        f_n_1 = 0
+        for i in range(2, n + 1):
+            fn = (f_n_1 + m) % i
+            f_n_1 = fn
+
+        return fn
 
 
 s = Solution()
-print(s.lastRemaining(5, 3))
+print(s.lastRemaining(82002, 120659))
