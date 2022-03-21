@@ -31,7 +31,10 @@ def build_tree(val_list):
         item = queue.popleft()
         left = root.pop()
         item.left = left
-        right = root.pop()
+        try:
+            right = root.pop()
+        except:
+            right = None
         item.right = right
         if left:
             queue.append(left)
