@@ -33,7 +33,7 @@ class Solution:
         return p_path[cnt]
 
 
-from binary import *
+from leetcode import *
 
 s = Solution()
 root = build_tree([1, 2, null])

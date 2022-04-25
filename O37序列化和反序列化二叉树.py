@@ -1,4 +1,4 @@
-from binary import *
+from leetcode import *
 
 
 class Codec:

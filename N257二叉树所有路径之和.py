@@ -1,6 +1,6 @@
 from typing import Optional, List
 
-from binary import *
+from leetcode import *
 
 
 class Solution:

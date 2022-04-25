@@ -1,5 +1,5 @@
 # Definition for a Node.
-from binary import *
+from leetcode import *
 
 
 class Node:

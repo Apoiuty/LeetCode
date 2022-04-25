@@ -1,4 +1,4 @@
-from LeetCode.binary import build_tree
+from LeetCode.leetcode import build_tree
 
 
 class TreeNode:

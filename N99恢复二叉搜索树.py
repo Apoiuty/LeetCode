@@ -1,6 +1,6 @@
 from typing import Optional
 import bisect
-from binary import *
+from leetcode import *
 
 
 class TreeNode:

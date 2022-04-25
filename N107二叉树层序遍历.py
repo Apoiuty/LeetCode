@@ -1,7 +1,7 @@
 from typing import List
 from collections import deque
 
-from binary import *
+from leetcode import *
 
 
 class Solution:
