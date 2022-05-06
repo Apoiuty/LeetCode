@@ -9,6 +9,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -24,7 +25,7 @@ def build_tree(val_list):
         return None
     root = []
     for item in val_list:
-        if item==None:
+        if item == None:
             root.append(item)
         else:
             root.append(TreeNode(item))
@@ -48,6 +49,3 @@ def build_tree(val_list):
             queue.append(right)
 
     return head
-
-
-
